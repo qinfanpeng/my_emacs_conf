@@ -8,4 +8,4 @@
 #  ~/.emacs.d-livecoding
 #     DIRECTORY!!!!
 
-ln -fsTL "$(pwd)" "${HOME}/.emacs.d-livecoding"
+ln -fsT "$(pwd)" "${HOME}/.emacs.d-livecoding"
