@@ -1,0 +1,5 @@
+#!/bin/bash
+
+function installModule {
+    ln_or_die "$(pwd)" "${HOME}/.emacs.d-livecoding"
+}
