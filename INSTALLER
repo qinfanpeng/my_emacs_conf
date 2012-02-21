@@ -3,4 +3,4 @@
 # This file might be sourced during installation with hsadmin
 #
 
-ln -bsfTL "$(pwd)" "${HOME}/.emacs.d-livecoding"
+ln ${force_opt} -bsTL "$(pwd)" "${HOME}/.emacs.d-livecoding"
