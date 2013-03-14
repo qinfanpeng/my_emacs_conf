@@ -32,3 +32,4 @@
 ;; Pull in personalised config
 (load-dotfile "config/core.el")
 
+(put 'set-goal-column 'disabled nil)
