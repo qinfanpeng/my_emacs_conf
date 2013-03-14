@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <img src="https://github.com/downloads/overtone/live-coding-emacs/improcess-logo-2.png" alt="Fuzzy Improcess Logo" title="Improcess" align="right" />
 
 ## Live Coding Emacs setup for Overtone
@@ -56,3 +57,9 @@ Here's a video showing the config in use: [Quick Intro to Live Programming with 
 I'm very happy to hear any feedback regarding this config. The idea is for you to use it to get started and give you a platform to start editing it and turning it into something personal.
 
 
+=======
+my_emacs_conf
+=============
+
+my emacs config 
+>>>>>>> fa17dc26b7b67d8e9b25109f20d48cd48b431f45
