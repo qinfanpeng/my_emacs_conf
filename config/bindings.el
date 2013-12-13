@@ -147,4 +147,23 @@ nil 0 nil "_NET_WM_STATE" 32
 ;(add-to-list 'load-path "~/emacs.d/lib")
 ;(require 'rubocop)
 
-;;--------------gradle mode----------------
+;;-------------------------------------------括号补全--------------------------------------
+
+;; 填入大中小括号，双单引号的匹配
+;; 详细格式可以参照C-h f skeleton-pair-alist
+(setq skeleton-pair-alist
+      '((?\" _ "\"" >)
+        (?\' _ "\'" >)
+        (?\( _ ")" >)
+        (?\[ _ "]" >)
+        (?\{ _ "}" >)))
+
+(setq skeleton-pair t)
+
+;; 绑定全局键值
+;; 也可以绑定单独到某个mode，比如cc-mode (define-key cc-mode-map (kbd "(") 'skeleton-pair-insert-maybe)
+(global-set-key (kbd "(")  'skeleton-pair-insert-maybe)
+(global-set-key (kbd "{")  'skeleton-pair-insert-maybe)
+(global-set-key (kbd "\'") 'skeleton-pair-insert-maybe)
+(global-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
+(global-set-key (kbd "[")  'skeleton-pair-insert-maybe)
