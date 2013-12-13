@@ -1,6 +1,6 @@
 ;; Place personal bindings here
 ;;开启菜单栏
-(menu-bar-mode t)
+;(menu-bar-mode t)
 ;; 显示行号
 (global-linum-mode t)
 ;; 设置默认工作目录
@@ -142,6 +142,10 @@ nil 0 nil "_NET_WM_STATE" 32
 (add-to-list 'load-path "~/emacs.d/lib")
 (require 'highlight-indentation)
 (set-face-background 'highlight-indentation-face "#AA5500")
+
+;; 设置ruby代码风格检查器 rubocop
+;(add-to-list 'load-path "~/emacs.d/lib")
+;(require 'rubocop)
 
 ;;-------------------------------------------括号补全--------------------------------------
 
