@@ -17,7 +17,7 @@
 ;;去掉换行的回转箭头符合
 (global-visual-line-mode 1)
 
-;;设置默认颜色主题
+;;设置默认颜色主题, 按 d 选择一个主题
 (add-to-list 'load-path "~/.emacs.d/")
 (require 'color-theme)
 (color-theme-initialize)
@@ -167,3 +167,8 @@ nil 0 nil "_NET_WM_STATE" 32
 (global-set-key (kbd "\'") 'skeleton-pair-insert-maybe)
 (global-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
 (global-set-key (kbd "[")  'skeleton-pair-insert-maybe)
+
+;; 高亮当前行
+(global-hl-line-mode 1)
+(set-face-background 'hl-line "#F5F4F9")
+
